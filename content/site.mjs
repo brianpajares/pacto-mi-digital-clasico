@@ -12,9 +12,9 @@ export const site = {
   tagline: "Conocimiento que conecta. Comunidad que actúa. Impacto que se demuestra.",
   description:
     "Plataforma digital de conocimiento, formación y acción del proyecto PACTO-MI, ganador del Alumni Engagement Innovation Fund 2025, en Cajamarca y Madre de Dios, Perú.",
-  origin: "https://pacto-mi-digital.vercel.app",
+  origin: "https://pacto-mi-digital-clasico.vercel.app",
   locale: "es-PE",
-  themeColor: "#7A171B",
+  themeColor: "#A11F27",
   contact: {
     email: "aeif.proyecto@gmail.com",
     phone: "+51 941 007 076",

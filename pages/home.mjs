@@ -1,6 +1,6 @@
 import { html, raw } from "../lib/html.mjs";
 import { site, cycle } from "../content/site.mjs";
-import { statCard, sectionHead, badge, callout, figure } from "../lib/components.mjs";
+import { statCard, sectionHead, badge, callout, figure, sponsorStrip } from "../lib/components.mjs";
 import { sessions } from "../content/talks.mjs";
 import { modules } from "../content/modules.mjs";
 import { events, EVENT_STATUS } from "../content/events.mjs";
@@ -20,6 +20,7 @@ const timeline = [
     href: `/expert-talks#sesion-${s.n}`,
   })),
   { sort: "2026-06", when: "Junio de 2026", title: "PACTO-MI en el V Foro Internacional FIDAS 2026", place: "Puerto Maldonado · presencial", href: "/eventos#madre-de-dios" },
+  { sort: "2026-11", when: "Octubre y noviembre de 2026", title: "Toolkit técnico de formación: seis módulos publicados", place: "Digital · descarga en PDF", href: "/aprende" },
 ].sort((a, b) => a.sort.localeCompare(b.sort));
 const secondStage = events.find((e) => e.id === "madre-de-dios");
 
@@ -42,6 +43,7 @@ const body = html`
           ${badge("AEIF 2025", "ok")} Proyecto ganador global del Alumni Engagement Innovation Fund de la
           Embajada de los Estados Unidos · Cajamarca y Madre de Dios, Perú
         </p>
+        ${sponsorStrip()}
       </div>
 
       <aside class="hero-panel" aria-labelledby="ciclo-titulo">
@@ -159,8 +161,8 @@ const body = html`
         <a class="card card-link" href="/aprende">
           <h3>Aprende</h3>
           <p>
-            ${modules.length} módulos formativos sobre minería ilegal, crimen organizado, impactos,
-            comunicación estratégica, política pública y planes de acción.
+            ${modules.length} módulos del toolkit técnico, completos en la web: minería ilegal, crimen
+            organizado, impactos, comunicación estratégica, prevención comunitaria y plan de acción.
           </p>
           <span class="card-arrow" aria-hidden="true">→</span>
         </a>
@@ -251,6 +253,7 @@ const body = html`
       ${institutional.map(
         (i) => html`
           <li>
+            ${i.logo ? html`<img class="org-logo" src="${i.logo.src}" width="${i.logo.w}" height="${i.logo.h}" alt="${i.logo.alt}" loading="lazy" decoding="async" />` : ""}
             <strong>${i.name}</strong>
             <span>${i.detail}</span>
           </li>

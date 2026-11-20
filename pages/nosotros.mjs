@@ -1,5 +1,5 @@
 import { html } from "../lib/html.mjs";
-import { pageHero, sectionHead, statCard, callout } from "../lib/components.mjs";
+import { sponsorStrip, pageHero, sectionHead, statCard, callout } from "../lib/components.mjs";
 import { team } from "../content/team.mjs";
 import { partners, institutional } from "../content/partners.mjs";
 import { site } from "../content/site.mjs";
@@ -81,6 +81,7 @@ const body = html`
       ${partners.map(
         (p) => html`
           <article class="partner">
+            <span class="partner-seal" aria-hidden="true">${p.mark}</span>
             <p class="partner-kind">${p.kind} · ${p.region}</p>
             <h3>${p.name}</h3>
             <p>${p.detail}</p>
@@ -97,18 +98,20 @@ const body = html`
         ${institutional.map(
           (i) => html`
             <li>
+              ${i.logo ? html`<img class="org-logo" src="${i.logo.src}" width="${i.logo.w}" height="${i.logo.h}" alt="${i.logo.alt}" loading="lazy" decoding="async" />` : ""}
               <strong>${i.name}</strong>
               <span>${i.detail}</span>
             </li>
           `
         )}
       </ul>
+      <div class="sponsors-card">${sponsorStrip()}</div>
       ${callout({
         tone: "info",
         icon: "i",
         title: "Sobre el uso de logotipos",
         body:
-          "Los nombres se muestran como referencia institucional. Las marcas gráficas de las entidades aliadas y financiadoras solo se publican con la autorización escrita correspondiente y respetando los lineamientos de co-branding del grant.",
+          "La bandera, el sello de la Embajada de los Estados Unidos en Lima y el logotipo de U.S.-Peru Alumni se muestran tal como aparecen en el toolkit oficial del proyecto. Los aliados se identifican con sus siglas hasta que el equipo entregue sus logotipos autorizados.",
       })}
     </div>
   </section>

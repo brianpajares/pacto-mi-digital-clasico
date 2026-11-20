@@ -151,7 +151,7 @@ export default {
       name: "Cajamarca, Perú",
       address: { "@type": "PostalAddress", addressRegion: "Cajamarca", addressCountry: "PE" },
     },
-    organizer: { "@type": "Organization", name: "PACTO-MI", url: "https://pacto-mi-digital.vercel.app" },
+    organizer: { "@type": "Organization", name: "PACTO-MI", url: "https://pacto-mi-digital-clasico.vercel.app" },
     description:
       "Primer taller presencial del proyecto Youth Action Network Against Illegal Mining and Organized Crime.",
   },

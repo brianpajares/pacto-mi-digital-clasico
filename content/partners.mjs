@@ -5,6 +5,7 @@
 export const partners = [
   {
     name: "V&C Analistas",
+    mark: "V&C",
     kind: "Aliado principal",
     region: "Madre de Dios",
     detail:
@@ -12,12 +13,14 @@ export const partners = [
   },
   {
     name: "Universidad Nacional de Cajamarca (UNC)",
+    mark: "UNC",
     kind: "Aliado académico",
     region: "Cajamarca",
     detail: "Facilita instalaciones para las sesiones de formación y convoca a su comunidad estudiantil.",
   },
   {
     name: "Universidad del Pacífico (UP)",
+    mark: "UP",
     kind: "Aliado académico",
     region: "Lima",
     detail:
@@ -25,6 +28,7 @@ export const partners = [
   },
   {
     name: "CINCIA",
+    mark: "CINCIA",
     kind: "Aliado científico",
     region: "Madre de Dios",
     detail:
@@ -32,6 +36,7 @@ export const partners = [
   },
   {
     name: "Plataforma Andina MAPE",
+    mark: "MAPE",
     kind: "Red regional",
     region: "Andes",
     detail:
@@ -39,6 +44,7 @@ export const partners = [
   },
   {
     name: "Instituto de Ingenieros de Minas del Perú (IIMP)",
+    mark: "IIMP",
     kind: "Aliado gremial",
     region: "Nacional",
     detail:
@@ -46,26 +52,52 @@ export const partners = [
   },
   {
     name: "Compañía de Minas Buenaventura",
+    mark: "BVN",
     kind: "Aliado empresarial",
     region: "Nacional",
     detail:
       "Aporta el puente entre comunidades locales y el sector minero formal.",
   },
+  {
+    name: "CoRelación – Conectamos Ideas",
+    mark: "CoRelación",
+    kind: "Agencia de comunicación",
+    region: "Nacional",
+    detail:
+      "Agencia de comunicación del proyecto: planificación y facilitación de actividades, desarrollo de materiales, comunicación estratégica y documentación audiovisual. Fuente: Toolkit PACTO-MI.",
+  },
 ];
 
 /**
- * Respaldo institucional. El uso de cada logotipo se rige por los lineamientos
- * del grant; hasta contar con la autorización escrita se muestra solo el
- * nombre, nunca la marca gráfica.
+ * Auspiciadores que el toolkit muestra en cada página ("Una iniciativa
+ * auspiciada por:"). Los logotipos se extrajeron de la portada del toolkit.
+ */
+export const sponsors = [
+  { name: "Estados Unidos de América", src: "/assets/brand/bandera-eeuu.webp", w: 196, h: 104, alt: "Bandera de los Estados Unidos de América", flag: true },
+  { name: "Embajada de los Estados Unidos en Lima", src: "/assets/brand/embajada-eeuu-lima.webp", w: 160, h: 160, alt: "Sello de la Embajada de los Estados Unidos en Lima" },
+  { name: "U.S.-Peru Alumni", src: "/assets/brand/us-peru-alumni.webp", w: 166, h: 160, alt: "Logotipo de U.S.-Peru Alumni (USPA), comunidad de exbecarios" },
+];
+
+/**
+ * Respaldo institucional. Los sellos de la Embajada y de U.S.-Peru Alumni se
+ * muestran como aparecen en el toolkit oficial del proyecto.
  */
 export const institutional = [
   {
     name: "Alumni Engagement Innovation Fund 2025",
     detail: "Fondo de la Embajada de los Estados Unidos que financia el proyecto. PACTO-MI fue reconocido ganador global.",
   },
-  { name: "Embajada de los Estados Unidos en el Perú", detail: "Entidad que convoca y administra el AEIF." },
+  {
+    name: "Embajada de los Estados Unidos en el Perú",
+    detail: "Entidad que convoca y administra el AEIF.",
+    logo: { src: "/assets/brand/embajada-eeuu-lima.webp", w: 160, h: 160, alt: "Sello de la Embajada de los Estados Unidos en Lima" },
+  },
   { name: "Fulbright Perú", detail: "Programa de intercambio del que provienen los cinco integrantes del equipo." },
-  { name: "U.S.-Peru Alumni", detail: "Comunidad de exbecarios de programas de intercambio de los Estados Unidos." },
+  {
+    name: "U.S.-Peru Alumni",
+    detail: "Comunidad de exbecarios de programas de intercambio de los Estados Unidos.",
+    logo: { src: "/assets/brand/us-peru-alumni.webp", w: 166, h: 160, alt: "Logotipo de U.S.-Peru Alumni (USPA), comunidad de exbecarios" },
+  },
 ];
 
 /** Organizaciones representadas en el taller de Cajamarca (19/11/2025). Fuente: AEIF 2026. */
