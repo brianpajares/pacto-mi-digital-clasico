@@ -73,7 +73,6 @@ export const partners = [
  * auspiciada por:"). Los logotipos se extrajeron de la portada del toolkit.
  */
 export const sponsors = [
-  { name: "Fulbright Perú", src: "/assets/brand/fulbright-peru.webp", w: 434, h: 116, alt: "Logotipo de Fulbright Perú, programa de intercambio de los cinco integrantes del equipo", wide: true },
   { name: "Estados Unidos de América", src: "/assets/brand/bandera-eeuu.webp", w: 196, h: 104, alt: "Bandera de los Estados Unidos de América", flag: true },
   { name: "Embajada de los Estados Unidos en Lima", src: "/assets/brand/embajada-eeuu-lima.webp", w: 160, h: 160, alt: "Sello de la Embajada de los Estados Unidos en Lima" },
   { name: "U.S.-Peru Alumni", src: "/assets/brand/us-peru-alumni.webp", w: 166, h: 160, alt: "Logotipo de U.S.-Peru Alumni (USPA), comunidad de exbecarios" },
@@ -93,7 +92,6 @@ export const institutional = [
     detail: "Entidad que convoca y administra el AEIF.",
     logo: { src: "/assets/brand/embajada-eeuu-lima.webp", w: 160, h: 160, alt: "Sello de la Embajada de los Estados Unidos en Lima" },
   },
-  { name: "Fulbright Perú", detail: "Programa de intercambio del que provienen los cinco integrantes del equipo." },
   {
     name: "U.S.-Peru Alumni",
     detail: "Comunidad de exbecarios de programas de intercambio de los Estados Unidos.",

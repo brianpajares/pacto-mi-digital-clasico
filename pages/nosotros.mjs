@@ -7,7 +7,7 @@ import { site } from "../content/site.mjs";
 const body = html`
   ${pageHero({
     eyebrow: "Nosotros",
-    title: "Cinco exbecarios Fulbright, dos regiones, un compromiso",
+    title: "Cinco exbecarios, dos regiones, un compromiso",
     lead:
       "PACTO-MI nació cuando un grupo de profesionales cajamarquinos formados en programas de intercambio de los Estados Unidos identificó la misma brecha desde ángulos distintos: la sociedad no tiene información confiable sobre lo que la minería ilegal realmente provoca.",
     meta: ["Ganadores globales AEIF 2025", "Cajamarca y Madre de Dios", "9 meses de ejecución"],
@@ -43,11 +43,10 @@ const body = html`
       <div class="team-band-head">
         ${sectionHead({
           eyebrow: "Equipo ejecutor",
-          title: "Cinco exbecarios Fulbright, un mismo pacto",
+          title: "Cinco exbecarios, un mismo pacto",
           lead: "Profesionales cajamarquinos formados en programas de intercambio de los Estados Unidos, ganadores globales del AEIF 2025.",
           id: "equipo",
         })}
-        <img class="team-fulbright" src="/assets/brand/fulbright-peru.webp" width="434" height="116" alt="Logotipo de Fulbright Perú, programa del que provienen los cinco integrantes" loading="lazy" decoding="async" />
       </div>
       ${teamPortraits(team, { detailed: true })}
     </div>
@@ -102,7 +101,7 @@ const body = html`
         icon: "i",
         title: "Sobre el uso de logotipos",
         body:
-          "El logotipo de Fulbright Perú, la bandera, el sello de la Embajada de los Estados Unidos en Lima y el logotipo de U.S.-Peru Alumni se muestran tal como aparecen en el toolkit oficial del proyecto. También se muestran el logotipo de Fulbright Perú y los de las empresas que figuran en la presentación institucional AEIF 2026. Los aliados restantes se identifican con sus siglas hasta que el equipo entregue sus logotipos.",
+          "La bandera, el sello de la Embajada de los Estados Unidos en Lima y el logotipo de U.S.-Peru Alumni se muestran tal como aparecen en el toolkit oficial del proyecto. También se muestran los logotipos de las empresas que figuran en la presentación institucional AEIF 2026. Los aliados restantes se identifican con sus siglas hasta que el equipo entregue sus logotipos.",
       })}
     </div>
   </section>
@@ -126,7 +125,7 @@ export default {
   file: "nosotros/index.html",
   title: "Nosotros",
   description:
-    "El equipo de cinco exbecarios Fulbright detrás de PACTO-MI, los aliados académicos, científicos y empresariales del proyecto, y el respaldo del Alumni Engagement Innovation Fund 2025.",
+    "El equipo de cinco exbecarios detrás de PACTO-MI, los aliados académicos, científicos y empresariales del proyecto, y el respaldo del Alumni Engagement Innovation Fund 2025.",
   breadcrumb: true,
   body,
 };

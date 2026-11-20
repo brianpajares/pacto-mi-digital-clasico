@@ -257,7 +257,7 @@ const body = html`
     ${sectionHead({
       eyebrow: "Respaldo institucional",
       title: "Quién está detrás",
-      lead: `Un equipo de cinco exbecarios Fulbright cajamarquinos, con ${factValue("duracion")} de ejecución y aliados académicos, científicos, gremiales y empresariales.`,
+      lead: `Un equipo de cinco exbecarios cajamarquinos, con ${factValue("duracion")} de ejecución y aliados académicos, científicos, gremiales y empresariales.`,
       id: "respaldo-titulo",
     })}
     ${teamPortraits(team)}
