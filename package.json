@@ -9,7 +9,8 @@
     "check": "node scripts/check.mjs",
     "icons": "echo 'Los iconos y la imagen OG se generan a partir del escudo del toolkit (ver docs/MARCA.md).'",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
-    "start": "node scripts/serve.mjs"
+    "start": "node scripts/serve.mjs",
+    "export": "npm run build && node scripts/export.mjs"
   },
   "engines": {
     "node": ">=20"
