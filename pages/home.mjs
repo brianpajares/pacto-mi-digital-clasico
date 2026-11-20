@@ -95,7 +95,7 @@ const body = html`
     ${sectionHead({
       eyebrow: "Trayectoria",
       title: "Lo que ya se hizo",
-      lead: "Del primer taller en Cajamarca a la jornada en Madre de Dios: seis hitos con su fecha, su modalidad y su detalle.",
+      lead: `Del primer taller en Cajamarca a los seis módulos del programa formativo: ${timeline.length} hitos con su fecha, su modalidad y su detalle.`,
       id: "trayectoria-titulo",
     })}
     <div class="trayectoria-grid">

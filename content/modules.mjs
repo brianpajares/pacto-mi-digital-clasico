@@ -10,8 +10,8 @@
  * son: "publicado", "en-produccion", "en-diseno".
  *
  * `session` registra la sesión virtual de cada módulo según su flyer oficial
- * (año 2026, el de las versiones del toolkit). Los módulos sin flyer
- * disponible no la declaran.
+ * (año 2026: los flyers de los módulos 1 y 2 lo indican; los demás siguen
+ * la misma serie semanal de octubre y noviembre).
  *
  * El contenido completo de cada módulo vive en `content/toolkit/modulo-N.mjs` y
  * se publica en /aprende/<slug>.
@@ -59,6 +59,15 @@ export const modules = [
     ],
     version: "octubre de 2026",
     cover: "toolkit-m1",
+    session: {
+      title: "Introducción a la minería ilegal en el Perú",
+      date: "2026-10-01",
+      dateLabel: "1 de octubre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Ing. Rosaluz Aguilar Contreras",
+      role: "Especialista en formalización minera, Minexo Ingeniería & Consultoría",
+      flyer: "flyer-modulo-1",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_1.pdf", size: "534 KB", pages: 23 },
     status: "publicado",
     content: m1,
@@ -80,6 +89,16 @@ export const modules = [
     ],
     version: "octubre de 2026",
     cover: "toolkit-m2",
+    session: {
+      title: "Vínculos entre minería ilegal y crimen organizado",
+      summary: "Análisis de las redes, actores y mecanismos que conectan la minería ilegal con otras economías criminales en el Perú.",
+      date: "2026-10-09",
+      dateLabel: "9 de octubre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Dr. Nicolás Zevallos Trigozo",
+      role: "Criminólogo y magíster en Ciencia Política",
+      flyer: "flyer-modulo-2",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_2.pdf", size: "407 KB", pages: 22 },
     status: "publicado",
     content: m2,
@@ -100,6 +119,15 @@ export const modules = [
     ],
     version: "noviembre de 2026",
     cover: "toolkit-m3",
+    session: {
+      title: "Consecuencias ambientales y socioeconómicas de la minería ilegal",
+      date: "2026-10-16",
+      dateLabel: "16 de octubre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Martha Torres",
+      role: "Directora nacional de CINCIA y exfuncionaria del MINAM",
+      flyer: "flyer-modulo-3",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_3.pdf", size: "194 KB", pages: 8 },
     status: "publicado",
     content: m3,

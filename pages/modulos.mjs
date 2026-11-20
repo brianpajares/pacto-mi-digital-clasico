@@ -84,6 +84,7 @@ function modulePage(m, i) {
                   <div>
                     <p class="eyebrow">Módulo ${m.n} · Modalidad virtual</p>
                     <h3 class="tk-session-title">${m.session.title}</h3>
+                    ${m.session.summary ? html`<p>${m.session.summary}</p>` : ""}
                     <dl class="tk-session-facts">
                       <div><dt>Fecha</dt><dd>${m.session.dateLabel}</dd></div>
                       <div><dt>Hora</dt><dd>${m.session.time}</dd></div>

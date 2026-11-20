@@ -137,7 +137,22 @@ export const media = {
     "Taller presencial de Cajamarca, 19 de noviembre de 2025 (presentación AEIF 2026)."
   ),
 
-  /* ---- Sesiones virtuales de los módulos 4 a 6 (flyers oficiales) ----------- */
+  /* ---- Sesiones virtuales de los módulos 1 a 6 (flyers oficiales) ----------- */
+  "flyer-modulo-1": img(
+    "flyer-modulo-1", 880, 1056,
+    "Flyer del Módulo 1, Introducción a la minería ilegal en el Perú: 1 de octubre, 7:00 p. m., modalidad virtual, con la Ing. Rosaluz Aguilar Contreras.",
+    "Flyer del Módulo 1."
+  ),
+  "flyer-modulo-2": img(
+    "flyer-modulo-2", 880, 1100,
+    "Flyer del Módulo 2, Vínculos entre minería ilegal y crimen organizado: 9 de octubre de 2026, 7:00 p. m., virtual, con el Dr. Nicolás Zevallos Trigozo.",
+    "Flyer del Módulo 2."
+  ),
+  "flyer-modulo-3": img(
+    "flyer-modulo-3", 880, 1100,
+    "Flyer del Módulo 3, Consecuencias ambientales y socioeconómicas de la minería ilegal: 16 de octubre, 7:00 p. m., virtual, con Martha Torres.",
+    "Flyer del Módulo 3."
+  ),
   "flyer-modulo-4": img(
     "flyer-modulo-4", 880, 1100,
     "Flyer del Módulo 4, Comunicación estratégica y activismo digital: 23 de octubre, 7:00 p. m., modalidad virtual, con Luis Claros.",

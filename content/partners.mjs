@@ -32,7 +32,7 @@ export const partners = [
     kind: "Aliado científico",
     region: "Madre de Dios",
     detail:
-      "Centro de Innovación Científica Amazónica. Orienta el enfoque territorial sobre el impacto ambiental de la minería ilegal.",
+      "Centro de Innovación Científica Amazónica. Orienta el enfoque territorial sobre el impacto ambiental de la minería ilegal; su directora nacional, Martha Torres, dictó el Módulo 3.",
   },
   {
     name: "Plataforma Andina MAPE",

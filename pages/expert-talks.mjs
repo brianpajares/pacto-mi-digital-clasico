@@ -72,7 +72,7 @@ const body = html`
         eyebrow: "Programa formativo · octubre y noviembre de 2026",
         title: "Sesiones virtuales de los módulos",
         lead:
-          "Cada módulo del Toolkit técnico de formación se dictó en una sesión virtual con un especialista invitado. Fechas, ponentes y cargos según los flyers oficiales.",
+          "Los seis módulos del Toolkit técnico de formación se dictaron en sesiones virtuales semanales, cada una con un especialista invitado. Fechas, ponentes y cargos según los flyers oficiales.",
         id: "modulos-virtuales",
       })}
       <div class="session-list">
@@ -87,6 +87,7 @@ const body = html`
                   ${badge("Realizada", "ok")}
                 </header>
                 <h3>${m.session.title}</h3>
+                ${m.session.summary ? html`<p class="session-objective">${m.session.summary}</p>` : ""}
                 <ul class="speaker-list">
                   <li class="speaker">
                     <p class="speaker-name">${m.session.speaker}</p>
