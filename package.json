@@ -1,26 +1,19 @@
 {
   "name": "pacto-mi-digital",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "description": "PACTO-MI Digital — plataforma de conocimiento, comunidad e impacto contra la minería ilegal.",
+  "description": "PACTO-MI Digital - Plataforma de conocimiento, comunidad e impacto contra la mineria ilegal.",
   "scripts": {
-    "build": "node scripts/gen-icons.mjs && node scripts/build.mjs && npm run check",
-    "check": "node scripts/check.mjs",
-    "icons": "node scripts/gen-icons.mjs",
-    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
-    "start": "node scripts/serve.mjs"
-  },
-  "engines": {
-    "node": ">=20"
+    "dev": "vercel dev",
+    "build": "node scripts/build-static.js",
+    "start": "node scripts/serve-static.js"
   },
   "keywords": [
     "pacto-mi",
     "mineria-ilegal",
-    "aeif",
-    "peru",
-    "cajamarca",
-    "madre-de-dios"
+    "impacto",
+    "educacion",
+    "comunidad"
   ],
   "author": "PACTO-MI",
   "license": "UNLICENSED"
