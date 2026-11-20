@@ -1,10 +1,13 @@
 /**
  * Equipo ejecutor. Todos son exbecarios Fulbright del Perú.
  * Fuente: Propuesta AEIF 2025, sección "Project Team Information".
+ * Fotografías: presentación institucional AEIF 2026 (cada retrato identificado
+ * por su texto alternativo en la diapositiva de portada).
  */
 export const team = [
   {
     name: "Deicy Noemi Sánchez Espinoza",
+    photo: "equipo-deicy-sanchez",
     role: "Coordinadora social · Team Lead",
     program: "Fulbright 2012",
     bio:
@@ -12,6 +15,7 @@ export const team = [
   },
   {
     name: "Yesenia Hayme Peláez Lobato",
+    photo: "equipo-yesenia-pelaez",
     role: "Coordinadora social",
     program: "Fulbright 2014",
     bio:
@@ -19,6 +23,7 @@ export const team = [
   },
   {
     name: "Jhuleyssy Liesseth Sánchez Aguilar",
+    photo: "equipo-jhuleyssy-sanchez",
     role: "Coordinadora de proyecto",
     program: "Fulbright 2022",
     bio:
@@ -26,6 +31,7 @@ export const team = [
   },
   {
     name: "Brian David Pajares Correa",
+    photo: "equipo-brian-pajares",
     role: "Coordinador de innovación",
     program: "Fulbright 2013",
     bio:
@@ -33,6 +39,7 @@ export const team = [
   },
   {
     name: "Luis Miguel Cotrina Malca",
+    photo: "equipo-miguel-cotrina",
     role: "Coordinador académico",
     program: "Fulbright 2013",
     bio:

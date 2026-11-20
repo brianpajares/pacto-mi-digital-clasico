@@ -64,7 +64,7 @@ export const partners = [
     kind: "Agencia de comunicación",
     region: "Nacional",
     detail:
-      "Agencia de comunicación del proyecto: planificación y facilitación de actividades, desarrollo de materiales, comunicación estratégica y documentación audiovisual. Fuente: Toolkit PACTO-MI.",
+      "Agencia de comunicación del proyecto: planificación y facilitación de actividades, desarrollo de materiales, comunicación estratégica y documentación audiovisual. Sus especialistas dictaron el Módulo 4 (Luis Claros) y el Módulo 6 (Mg. Martin Alvarado, CEO de CoRelación). Fuentes: Toolkit PACTO-MI y flyers de los módulos.",
   },
 ];
 
@@ -73,6 +73,7 @@ export const partners = [
  * auspiciada por:"). Los logotipos se extrajeron de la portada del toolkit.
  */
 export const sponsors = [
+  { name: "Fulbright Perú", src: "/assets/brand/fulbright-peru.webp", w: 434, h: 116, alt: "Logotipo de Fulbright Perú, programa de intercambio de los cinco integrantes del equipo", wide: true },
   { name: "Estados Unidos de América", src: "/assets/brand/bandera-eeuu.webp", w: 196, h: 104, alt: "Bandera de los Estados Unidos de América", flag: true },
   { name: "Embajada de los Estados Unidos en Lima", src: "/assets/brand/embajada-eeuu-lima.webp", w: 160, h: 160, alt: "Sello de la Embajada de los Estados Unidos en Lima" },
   { name: "U.S.-Peru Alumni", src: "/assets/brand/us-peru-alumni.webp", w: 166, h: 160, alt: "Logotipo de U.S.-Peru Alumni (USPA), comunidad de exbecarios" },
@@ -120,4 +121,19 @@ export const cajamarcaUniversities = [
   "Universidad Nacional de Cajamarca (UNC)",
   "Universidad Privada del Norte (UPN)",
   "SENATI",
+];
+
+/**
+ * Empresas cuyos logotipos acompañan la portada de la presentación
+ * institucional AEIF 2026. Se muestran tal como aparecen allí; el rol de
+ * cada una no se detalla porque la presentación no lo describe.
+ */
+export const companies = [
+  {
+    name: "Newmont Yanacocha y Los Andes de Cajamarca",
+    src: "/assets/brand/newmont-yanacocha-los-andes.webp",
+    w: 274,
+    h: 184,
+    alt: "Logotipos de Newmont Yanacocha y de la Asociación Los Andes de Cajamarca",
+  },
 ];

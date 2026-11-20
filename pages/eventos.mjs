@@ -56,6 +56,7 @@ const body = html`
               ${e.banner
                 ? html`<p class="event-method"><strong>Lema de PACTO-MI en el evento:</strong> «${e.banner}»</p>`
                 : ""}
+              ${e.photo ? figure(e.photo, { zoom: true, className: "event-photo" }) : ""}
               ${e.method
                 ? html`<p class="event-method"><strong>Metodología:</strong> ${e.method}</p>`
                 : ""}

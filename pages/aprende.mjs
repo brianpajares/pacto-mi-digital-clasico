@@ -74,6 +74,9 @@ const body = html`
                 <p class="module-sub">${m.subtitle}</p>
                 <p class="module-summary">${m.summary}</p>
                 <p class="module-format"><span class="sr-only">Incluye: </span>${m.format}</p>
+                ${m.session
+                  ? html`<p class="module-session"><strong>Sesión virtual:</strong> ${m.session.dateLabel}, ${m.session.time} · ${m.session.speaker}</p>`
+                  : ""}
                 <details class="module-details">
                   <summary>Objetivos de aprendizaje</summary>
                   <ul>

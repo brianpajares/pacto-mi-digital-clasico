@@ -1756,3 +1756,55 @@ h3 { color: var(--ink); }
 
 /* Textos de la franja de auspiciadores sobre fondo blanco, también dentro de bandas rojas. */
 .sponsors-card .sponsors-title, .site-footer .sponsors-title { color: var(--red); }
+
+/* ---------------------------------------------- equipo, sesiones y logos --- */
+
+.sponsors .sponsor-wide img { height: 38px; }
+.site-footer .sponsors .sponsor-wide img { height: 32px; }
+
+.team-band-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; margin-bottom: 2rem; }
+.team-band-head .section-head { margin-bottom: 0; }
+.team-fulbright { height: 54px; width: auto; padding: 10px 14px; background: #fff; border-radius: var(--radius); }
+
+.team-portraits { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
+.portrait { display: flex; flex-direction: column; background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); border-bottom: 5px solid var(--red-bright); }
+.portrait-photo { aspect-ratio: 4 / 5; overflow: hidden; background: var(--surface-2); }
+.portrait-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.portrait:hover .portrait-photo img { transform: scale(1.04); }
+.portrait-body { padding: 0.9rem 1rem 1.1rem; }
+.portrait-body h3 { font-family: var(--font-display); font-size: 0.98rem; font-weight: 800; color: var(--red-deep) !important; margin-bottom: 0.25rem; }
+.portrait-role { margin: 0; font-size: 0.82rem; font-weight: 700; color: var(--red) !important; }
+.portrait-program { margin: 0.3rem 0 0.6rem; font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-3) !important; }
+.portrait-bio { margin: 0; font-size: 0.85rem; color: var(--ink-2) !important; line-height: 1.5; }
+.team-portraits-detailed .portrait-photo { aspect-ratio: 4 / 5; }
+
+.winners-figure { margin-bottom: 1.25rem; }
+.winners-figure img { border-radius: var(--radius-lg); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+
+.companies { margin-top: 2.5rem; padding: 1.5rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); text-align: center; }
+.companies-title { font-family: var(--font-display); font-weight: 800; color: var(--red); margin-bottom: 0.75rem; }
+.companies ul { list-style: none; margin: 0 0 0.5rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.companies img { height: 90px; width: auto; }
+
+.tk-session { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; align-items: start; padding: 1.25rem; background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--red-bright); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.tk-session-flyer img { border-radius: var(--radius); }
+.tk-session-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--red-deep); margin-bottom: 0.9rem; }
+.tk-session-facts { display: grid; gap: 0.6rem; margin: 0 0 0.9rem; }
+.tk-session-facts div { display: grid; grid-template-columns: 6rem 1fr; gap: 0.75rem; }
+.tk-session-facts dt { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); padding-top: 0.15rem; }
+.tk-session-facts dd { margin: 0; color: var(--ink-2); }
+.module-session { margin: -0.4rem 0 0.9rem; font-size: 0.88rem; color: var(--ink-2); }
+.module-session strong { color: var(--red); }
+
+.cajamarca-photo, .event-photo { margin: 1.25rem 0; }
+.cajamarca-photo img, .event-photo img { border-radius: var(--radius-lg); }
+
+@media (max-width: 1040px) {
+  .team-portraits { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .team-portraits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tk-session { grid-template-columns: 1fr; }
+  .tk-session-flyer { max-width: 260px; }
+  .companies img { height: 70px; }
+}

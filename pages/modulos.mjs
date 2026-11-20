@@ -15,6 +15,7 @@ function modulePage(m, i) {
   const h = c.howTo || {};
 
   const toc = [
+    m.session && ["sesion", "Sesión virtual del módulo"],
     ...c.sections.map((s) => [s.id, s.title]),
     c.tools && ["herramientas", "Herramientas para el taller"],
     c.glossary && ["glosario", "Glosario"],
@@ -73,6 +74,27 @@ function modulePage(m, i) {
             : ""}
           ${c.sheet ? table({ caption: "Ficha técnica", head: ["Elemento", "Descripción"], rows: c.sheet }) : ""}
         </section>
+
+        ${m.session
+          ? html`
+              <section class="tk-section" aria-labelledby="sesion">
+                <h2 id="sesion">Sesión virtual del módulo</h2>
+                <div class="tk-session">
+                  ${figure(m.session.flyer, { zoom: true, caption: false, className: "tk-session-flyer" })}
+                  <div>
+                    <p class="eyebrow">Módulo ${m.n} · Modalidad virtual</p>
+                    <h3 class="tk-session-title">${m.session.title}</h3>
+                    <dl class="tk-session-facts">
+                      <div><dt>Fecha</dt><dd>${m.session.dateLabel}</dd></div>
+                      <div><dt>Hora</dt><dd>${m.session.time}</dd></div>
+                      <div><dt>Ponente</dt><dd><strong>${m.session.speaker}</strong><br />${m.session.role}</dd></div>
+                    </dl>
+                    <p class="tk-source">Datos del flyer oficial de la sesión. Toca el flyer para verlo en tamaño completo.</p>
+                  </div>
+                </div>
+              </section>
+            `
+          : ""}
 
         ${c.sections.map(
           (s) => html`

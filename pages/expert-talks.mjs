@@ -1,14 +1,17 @@
 import { html } from "../lib/html.mjs";
 import { pageHero, sectionHead, badge, callout, statCard, figure } from "../lib/components.mjs";
 import { cycle, sessions, SESSION_STATUS, talkMetadata, talkCount } from "../content/talks.mjs";
+import { modules } from "../content/modules.mjs";
+
+const moduleSessions = modules.filter((m) => m.session);
 
 const body = html`
   ${pageHero({
     eyebrow: "Expert Talks",
     title: "Ciclo de ponencias virtuales con especialistas",
     lead:
-      "Cuatro sesiones virtuales entre marzo y mayo de 2026, con especialistas en derecho ambiental, criminología, ingeniería ambiental, liderazgo y gobernanza. Cada sesión cerró con preguntas del público.",
-    meta: [`${sessions.length} sesiones`, `${talkCount} ponencias`, "Modalidad virtual"],
+      "Cuatro sesiones virtuales entre marzo y mayo de 2026, con especialistas en derecho ambiental, criminología, ingeniería ambiental, liderazgo y gobernanza, y las sesiones de los módulos del programa formativo en octubre y noviembre de 2026.",
+    meta: [`${sessions.length} sesiones del ciclo`, `${talkCount} ponencias`, `${moduleSessions.length} sesiones de módulos`, "Modalidad virtual"],
   })}
 
   <section class="section shell" aria-labelledby="sesiones">
@@ -60,6 +63,42 @@ const body = html`
 
     <div class="stat-grid cols-3">
       ${statCard("sesiones-virtuales")} ${statCard("ponencias")} ${statCard("satisfaccion")}
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="modulos-virtuales">
+    <div class="shell">
+      ${sectionHead({
+        eyebrow: "Programa formativo · octubre y noviembre de 2026",
+        title: "Sesiones virtuales de los módulos",
+        lead:
+          "Cada módulo del Toolkit técnico de formación se dictó en una sesión virtual con un especialista invitado. Fechas, ponentes y cargos según los flyers oficiales.",
+        id: "modulos-virtuales",
+      })}
+      <div class="session-list">
+        ${moduleSessions.map(
+          (m) => html`
+            <article class="session has-flyer" id="modulo-${m.n}">
+              ${figure(m.session.flyer, { className: "session-flyer", caption: false, zoom: true })}
+              <div class="session-main">
+                <header class="session-head">
+                  <p class="session-n">Módulo ${String(m.n).padStart(2, "0")}</p>
+                  <p class="session-when">${m.session.dateLabel} · ${m.session.time}</p>
+                  ${badge("Realizada", "ok")}
+                </header>
+                <h3>${m.session.title}</h3>
+                <ul class="speaker-list">
+                  <li class="speaker">
+                    <p class="speaker-name">${m.session.speaker}</p>
+                    <p class="speaker-role">${m.session.role}</p>
+                  </li>
+                </ul>
+                <p class="section-cta"><a class="btn btn-ghost" href="${m.path}">Ver el contenido del Módulo ${m.n}</a></p>
+              </div>
+            </article>
+          `
+        )}
+      </div>
     </div>
   </section>
 

@@ -12,6 +12,7 @@ export const events = [
     dateLabel: "19 de noviembre de 2025",
     status: "realizado",
     attendance: 220,
+    photo: "cajamarca-jornada",
     summary:
       "Primera sesión presencial del proyecto. Reunió a organizaciones juveniles y de voluntariado, estudiantes universitarios, ciudadanía independiente y representantes de instituciones públicas y privadas.",
     method:

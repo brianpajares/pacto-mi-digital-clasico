@@ -9,6 +9,10 @@
  * `status` describe el estado editorial real del contenido. Los estados válidos
  * son: "publicado", "en-produccion", "en-diseno".
  *
+ * `session` registra la sesión virtual de cada módulo según su flyer oficial
+ * (año 2026, el de las versiones del toolkit). Los módulos sin flyer
+ * disponible no la declaran.
+ *
  * El contenido completo de cada módulo vive en `content/toolkit/modulo-N.mjs` y
  * se publica en /aprende/<slug>.
  */
@@ -116,6 +120,15 @@ export const modules = [
     ],
     version: "noviembre de 2026",
     cover: "toolkit-m4",
+    session: {
+      title: "Comunicación estratégica y activismo digital",
+      date: "2026-10-23",
+      dateLabel: "23 de octubre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Luis Claros",
+      role: "Director de Prensa y Comunicaciones en CoRelación y conductor del programa Radar 24 del diario Gestión",
+      flyer: "flyer-modulo-4",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_4.pdf", size: "269 KB", pages: 19 },
     status: "publicado",
     content: m4,
@@ -137,6 +150,15 @@ export const modules = [
     ],
     version: "noviembre de 2026",
     cover: "toolkit-m5",
+    session: {
+      title: "Marcos de política pública y mecanismos legales para la prevención comunitaria",
+      date: "2026-10-30",
+      dateLabel: "30 de octubre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Norman Nelson Coronel",
+      role: "Politólogo y MSc por la Universidad de Londres; asesor del Congreso de la República",
+      flyer: "flyer-modulo-5",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_5.pdf", size: "281 KB", pages: 19 },
     status: "publicado",
     content: m5,
@@ -158,6 +180,15 @@ export const modules = [
     ],
     version: "noviembre de 2026",
     cover: "toolkit-m6",
+    session: {
+      title: "Desarrollo de planes de acción localizados",
+      date: "2026-11-06",
+      dateLabel: "6 de noviembre de 2026",
+      time: "7:00 p. m.",
+      speaker: "Mg. Martin Alvarado",
+      role: "Coach antropológico y ontológico, CEO de CoRelación y director de Inspiración 360°",
+      flyer: "flyer-modulo-6",
+    },
     pdf: { file: "PACTO-MI_Toolkit_Modulo_6.pdf", size: "230 KB", pages: 17 },
     status: "publicado",
     content: m6,

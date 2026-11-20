@@ -1,8 +1,9 @@
 import { html, raw } from "../lib/html.mjs";
 import { site, cycle } from "../content/site.mjs";
-import { statCard, sectionHead, badge, callout, figure, sponsorStrip } from "../lib/components.mjs";
+import { statCard, sectionHead, badge, callout, figure, sponsorStrip, teamPortraits } from "../lib/components.mjs";
 import { sessions } from "../content/talks.mjs";
 import { modules } from "../content/modules.mjs";
+import { team } from "../content/team.mjs";
 import { events, EVENT_STATUS } from "../content/events.mjs";
 import { cajamarcaOrgs, institutional } from "../content/partners.mjs";
 import { factValue } from "../content/facts.mjs";
@@ -20,7 +21,16 @@ const timeline = [
     href: `/expert-talks#sesion-${s.n}`,
   })),
   { sort: "2026-06", when: "Junio de 2026", title: "PACTO-MI en el V Foro Internacional FIDAS 2026", place: "Puerto Maldonado · presencial", href: "/eventos#madre-de-dios" },
-  { sort: "2026-11", when: "Octubre y noviembre de 2026", title: "Toolkit técnico de formación: seis módulos publicados", place: "Digital · descarga en PDF", href: "/aprende" },
+  ...modules
+    .filter((m) => m.session)
+    .map((m) => ({
+      sort: m.session.date,
+      when: m.session.dateLabel,
+      title: `Módulo ${m.n}: ${m.session.title}`,
+      place: `Virtual · ${m.session.speaker}`,
+      href: `${m.path}#sesion`,
+    })),
+  { sort: "2026-11-20", when: "Noviembre de 2026", title: "Toolkit técnico de formación: seis módulos publicados", place: "Digital · descarga en PDF", href: "/aprende" },
 ].sort((a, b) => a.sort.localeCompare(b.sort));
 const secondStage = events.find((e) => e.id === "madre-de-dios");
 
@@ -200,6 +210,7 @@ const body = html`
         institucionales.
       </p>
       <p>${pastEvent.method}</p>
+      ${figure("cajamarca-jornada", { zoom: true, className: "cajamarca-photo" })}
       <ul class="pill-list">
         ${cajamarcaOrgs.map((o) => html`<li>${o}</li>`)}
       </ul>
@@ -249,6 +260,7 @@ const body = html`
       lead: `Un equipo de cinco exbecarios Fulbright cajamarquinos, con ${factValue("duracion")} de ejecución y aliados académicos, científicos, gremiales y empresariales.`,
       id: "respaldo-titulo",
     })}
+    ${teamPortraits(team)}
     <ul class="org-list">
       ${institutional.map(
         (i) => html`

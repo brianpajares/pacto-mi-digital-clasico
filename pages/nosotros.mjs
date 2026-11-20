@@ -1,16 +1,8 @@
 import { html } from "../lib/html.mjs";
-import { sponsorStrip, pageHero, sectionHead, statCard, callout } from "../lib/components.mjs";
+import { sponsorStrip, pageHero, sectionHead, statCard, callout, figure, teamPortraits } from "../lib/components.mjs";
 import { team } from "../content/team.mjs";
-import { partners, institutional } from "../content/partners.mjs";
+import { partners, institutional, companies } from "../content/partners.mjs";
 import { site } from "../content/site.mjs";
-
-const initials = (name) =>
-  name
-    .split(" ")
-    .filter((w) => w.length > 2)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("");
 
 const body = html`
   ${pageHero({
@@ -38,6 +30,7 @@ const body = html`
           Así nace PACTO-MI: una red de acción juvenil contra la minería ilegal y el crimen organizado,
           concebida como plataforma de liderazgo y acción colectiva en Cajamarca y Madre de Dios.
         </p>
+        ${figure("aeif-ganadores-globales", { zoom: true, className: "winners-figure" })}
       </div>
       <div class="stat-grid cols-1">
         ${statCard("presupuesto")} ${statCard("duracion")} ${statCard("beneficiarios-directos")}
@@ -45,27 +38,18 @@ const body = html`
     </div>
   </section>
 
-  <section class="band" aria-labelledby="equipo">
+  <section class="band band-dark team-band" aria-labelledby="equipo" id="equipo-ejecutor">
     <div class="shell">
-      ${sectionHead({
-        eyebrow: "Equipo ejecutor",
-        title: "Quiénes lo hacen",
-        lead: "Los cinco integrantes son exbecarios Fulbright del Perú.",
-        id: "equipo",
-      })}
-      <div class="team-grid">
-        ${team.map(
-          (p) => html`
-            <article class="person">
-              <span class="person-avatar" aria-hidden="true">${initials(p.name)}</span>
-              <h3>${p.name}</h3>
-              <p class="person-role">${p.role}</p>
-              <p class="person-program">${p.program}</p>
-              <p class="person-bio">${p.bio}</p>
-            </article>
-          `
-        )}
+      <div class="team-band-head">
+        ${sectionHead({
+          eyebrow: "Equipo ejecutor",
+          title: "Cinco exbecarios Fulbright, un mismo pacto",
+          lead: "Profesionales cajamarquinos formados en programas de intercambio de los Estados Unidos, ganadores globales del AEIF 2025.",
+          id: "equipo",
+        })}
+        <img class="team-fulbright" src="/assets/brand/fulbright-peru.webp" width="434" height="116" alt="Logotipo de Fulbright Perú, programa del que provienen los cinco integrantes" loading="lazy" decoding="async" />
       </div>
+      ${teamPortraits(team, { detailed: true })}
     </div>
   </section>
 
@@ -89,6 +73,13 @@ const body = html`
         `
       )}
     </div>
+    <div class="companies">
+      <p class="companies-title">También acompañan al proyecto</p>
+      <ul>
+        ${companies.map((c) => html`<li><img src="${c.src}" width="${c.w}" height="${c.h}" alt="${c.alt}" loading="lazy" decoding="async" /></li>`)}
+      </ul>
+      <p class="tk-source">Logotipos tal como figuran en la portada de la presentación institucional AEIF 2026.</p>
+    </div>
   </section>
 
   <section class="band band-dark" aria-labelledby="respaldo">
@@ -111,7 +102,7 @@ const body = html`
         icon: "i",
         title: "Sobre el uso de logotipos",
         body:
-          "La bandera, el sello de la Embajada de los Estados Unidos en Lima y el logotipo de U.S.-Peru Alumni se muestran tal como aparecen en el toolkit oficial del proyecto. Los aliados se identifican con sus siglas hasta que el equipo entregue sus logotipos autorizados.",
+          "El logotipo de Fulbright Perú, la bandera, el sello de la Embajada de los Estados Unidos en Lima y el logotipo de U.S.-Peru Alumni se muestran tal como aparecen en el toolkit oficial del proyecto. También se muestran el logotipo de Fulbright Perú y los de las empresas que figuran en la presentación institucional AEIF 2026. Los aliados restantes se identifican con sus siglas hasta que el equipo entregue sus logotipos.",
       })}
     </div>
   </section>

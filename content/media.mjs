@@ -120,6 +120,39 @@ export const media = {
     "Línea de tiempo de Pataz entre mayo de 2025 y junio de 2026: secuestro y asesinato de 13 trabajadores, detenciones, operaciones Relámpago y prórroga del estado de emergencia.",
     "Figura del toolkit (Módulo 2): escalada criminal y respuesta del Estado en Pataz, 2025–2026, basada en fuentes oficiales y medios públicos."
   ),
+  /* ---- Equipo ejecutor (presentación AEIF 2026) ---------------------------- */
+  "equipo-deicy-sanchez": img("equipo-deicy-sanchez", 480, 600, "Retrato de Deicy Noemi Sánchez Espinoza, coordinadora social y líder del equipo PACTO-MI."),
+  "equipo-yesenia-pelaez": img("equipo-yesenia-pelaez", 480, 600, "Retrato de Yesenia Hayme Peláez Lobato, coordinadora social del equipo PACTO-MI."),
+  "equipo-jhuleyssy-sanchez": img("equipo-jhuleyssy-sanchez", 480, 600, "Retrato de Jhuleyssy Liesseth Sánchez Aguilar, coordinadora de proyecto de PACTO-MI."),
+  "equipo-brian-pajares": img("equipo-brian-pajares", 480, 600, "Retrato de Brian David Pajares Correa, coordinador de innovación de PACTO-MI."),
+  "equipo-miguel-cotrina": img("equipo-miguel-cotrina", 480, 600, "Retrato de Luis Miguel Cotrina Malca, coordinador académico de PACTO-MI."),
+  "aeif-ganadores-globales": img(
+    "aeif-ganadores-globales", 593, 592,
+    "Anuncio de los Fondos AEIF 2025, ganadores globales: Red de Acción Juvenil contra la Minería Ilegal y el Crimen Organizado, de Deicy Sánchez, Brian Pajares, Yesenia Peláez, Miguel Cotrina y Jhuleyssy Sánchez.",
+    "Anuncio de los ganadores globales del AEIF 2025 (presentación AEIF 2026)."
+  ),
+  "cajamarca-jornada": img(
+    "cajamarca-jornada", 1300, 1084,
+    "Integrantes y ponentes sonríen al frente del coliseo mientras cientos de participantes del taller de Cajamarca levantan las manos al fondo.",
+    "Taller presencial de Cajamarca, 19 de noviembre de 2025 (presentación AEIF 2026)."
+  ),
+
+  /* ---- Sesiones virtuales de los módulos 4 a 6 (flyers oficiales) ----------- */
+  "flyer-modulo-4": img(
+    "flyer-modulo-4", 880, 1100,
+    "Flyer del Módulo 4, Comunicación estratégica y activismo digital: 23 de octubre, 7:00 p. m., modalidad virtual, con Luis Claros.",
+    "Flyer del Módulo 4."
+  ),
+  "flyer-modulo-5": img(
+    "flyer-modulo-5", 880, 1100,
+    "Flyer del Módulo 5, Marcos de política pública y mecanismos legales para la prevención comunitaria: 30 de octubre, 7:00 p. m., virtual, con Norman Nelson Coronel.",
+    "Flyer del Módulo 5."
+  ),
+  "flyer-modulo-6": img(
+    "flyer-modulo-6", 880, 1100,
+    "Flyer del Módulo 6, Desarrollo de planes de acción localizados: 6 de noviembre, 7:00 p. m., virtual, con el Mg. Martin Alvarado.",
+    "Flyer del Módulo 6."
+  ),
 };
 
 export function image(key) {
